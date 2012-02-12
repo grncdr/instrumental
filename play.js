@@ -110,11 +110,11 @@ $(document).ready(function () {
     }, {});
     
     if (params.talkUri) $('#talk-uri').val(params.talkUri);
-    if (params.talkVolume) $('#talk-volume').val(params.talkVolume);
+    if (params.talkVolume != null) $('#talk-volume').val(params.talkVolume);
     if (params.talkOffset) $('#talk-offset').val(params.talkOffset);
     
     if (params.musicUri) $('#music-uri').val(params.musicUri);
-    if (params.musicVolume) $('#music-volume').val(params.musicVolume);
+    if (params.musicVolume != null) $('#music-volume').val(params.musicVolume);
     if (params.musicOffset) $('#music-offset').val(params.musicOffset);
     
     if (query.length) $('#play').trigger('click');
